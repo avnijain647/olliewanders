@@ -1,31 +1,31 @@
 //
+// $(document).on('scroll', function() {
 //
-// $(function() {
-//     var img = $('.rick2').html();
-//     for (var i = 0; i < 10; i++) {
-//         moar(img);
-//     }
-//     $(window).on('scroll', function() {
-//         if ($(this).scrollTop() >= $('.rick2').height() - $(this).height()) {
-//             moar(img);
-//         }
-//     });
-//     function moar(content) {
-//         $('.rick2').append(content);
-//     }
-// });
+//   var pixels = $(document).scrollTop()
+//   var documentHeight = $(document).height()
+//   var windowHeight = $(window).height()
 //
-// $(function() {
-//     var img = $('.rick').html();
-//     for (var i = 0; i < 10; i++) {
-//         moar(img);
-//     }
-//     $(window).on('scroll', function() {
-//         if ($(this).scrollTop() >= $('.rick').height() - $(this).height()) {
-//             moar(img);
-//         }
-//     });
-//     function moar(content) {
-//         $('.rick').append(content);
-//     }
-// });
+//   var difference = documentHeight - windowHeight
+//   var percentage = 100 * pixels / difference
+//
+//
+//   $('.cat').css('background-position', pixels + 'vh')
+// })
+
+  $(window).on('scroll', function () {
+    var scrollTop = $(window).scrollTop();
+    var maxScroll = $(document).height() - $(window).height();
+
+    var totalFrames = 16; // total number of frames in sprite
+    var frameWidth = 330; // width of one frame in px
+
+    var scrollFraction = scrollTop / maxScroll;
+    var currentFrame = Math.floor(scrollFraction * totalFrames);
+
+    // Clamp to max frame
+    currentFrame = Math.min(currentFrame, totalFrames - 1);
+
+    var newX = -frameWidth * currentFrame;
+
+    $('.cat').css('background-position', `${newX}px 0`);
+  });
