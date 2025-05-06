@@ -8,50 +8,60 @@ font-weight: 400;
 font-style: italic;
 }
 
-body{
+html, body{
+  /* width: 100vw;
   margin: 0;
-  padding: 0;
-  position: relative;
+  padding: 0; */
+  /* position: relative; */
   font-family: "p22-mackinac-pro", serif;
   font-weight: 400;
   font-style: normal;
+    /* overflow-x: hidden; */
 }
-@keyframes falling {
+
+/* @keyframes falling {
   0%{
     background-position: 0 0;
   }
   100%{
         background-position: -5283px 0;
   }
+} */
+.box{
+  position: relative;
+  height:1800px;
 }
 .cat{
-  background-position:0 0;
-background-size:auto 700px;
-/* background-repeat: no-repeat; */
-background-image: url(images/cat-falling-strip.png);
-  display: flex;
-justify-content: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky;
+      position: sticky;
+  top: 0%;
+  left:90%;
+    transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   width:330px;
   height: 700px;
-  background-color: red;
   opacity: 1;
   z-index:100;
+  background-size: auto 700px;
+  background-image: url(images/cat-falling-strip.png);
 }
 .cat img{
   height: 100%;
 }
-.cat.animate{
+/* .cat.animate{
   animation: falling 1.4s steps(16);
-}
+} */
 .main{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100vw;
+  height:auto;
   /* index:10; */
   text-align: center;
-      width: 100vw;
   display:flex;
   flex-direction: column;
   flex-wrap: nowrap;
