@@ -31,7 +31,11 @@ html, body{
   position: relative;
   height:1800px;
 }
-.cat{
+.cat-box{
+  overflow-x: hidden;
+    z-index:100;
+  padding: 0;
+  margin: 0;
   position: -webkit-sticky;
       position: -moz-sticky;
       position: -ms-sticky;
@@ -39,21 +43,23 @@ html, body{
       position: sticky;
   top: 0%;
   left:50%;
-    transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+    /* transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0); */
+  /* background-color: red; */
+}
+.cat{
   width:330px;
   height: 700px;
-  opacity: 1;
-  z-index:100;
+opacity: .7;
   background-size: auto 700px;
   background-image: url(images/cat-falling-strip.png);
 }
-.cat img{
-  height: 100%;
-}
-/* .cat.animate{
-  animation: falling 1.4s steps(16);
-} */
+
+
 .main{
   position: absolute;
   top:0;
