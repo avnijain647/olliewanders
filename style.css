@@ -9,14 +9,12 @@ font-style: italic;
 }
 
 html, body{
-  /* width: 100vw;
+ /* overflow-x: hidden; */
+  padding: 0;
   margin: 0;
-  padding: 0; */
-  /* position: relative; */
   font-family: "p22-mackinac-pro", serif;
   font-weight: 400;
   font-style: normal;
-    /* overflow-x: hidden; */
 }
 
 /* @keyframes falling {
@@ -32,10 +30,7 @@ html, body{
   height:1800px;
 }
 .cat-box{
-  overflow-x: hidden;
-    z-index:100;
-  padding: 0;
-  margin: 0;
+      z-index:100;
   position: -webkit-sticky;
       position: -moz-sticky;
       position: -ms-sticky;
