@@ -38,7 +38,7 @@ html, body{
       position: -o-sticky;
       position: sticky;
   top: 0%;
-  left:90%;
+  left:50%;
     transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   width:330px;
