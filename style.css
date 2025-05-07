@@ -9,7 +9,6 @@ font-style: italic;
 }
 
 html, body{
- /* overflow-x: hidden; */
  background-color: #FDFBF7;
   padding: 0;
   margin: 0;
@@ -29,7 +28,7 @@ html, body{
 } */
 .box{
   position: relative;
-  height:2460px;
+  /* height:2460px; */
 }
 .cat-box{
       z-index:100;
@@ -204,6 +203,7 @@ width:80vw;
   color: white;
 }
 .footer-header{
+  line-height:1.2;
     width:60vw;
   padding-top: 40px;
     /* padding-bottom: 20px; */
@@ -229,7 +229,7 @@ background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/arrow-button.png);
 color: #ff0000;
-  margin-top: 20px;
+  margin-top: 80px;
     margin-bottom: 40px;
   background-color: white;
   width:200px;
@@ -283,6 +283,7 @@ color: #ff0000;
   .intro{
     font-size:27px;
   }
+
 .para{
   width:50vw;
     padding-top: 30px;

@@ -16,6 +16,8 @@
     var scrollTop = $(window).scrollTop();
     var maxScroll = $(document).height() - $(window).height();
 
+var catheight = $(document).height() - 270;
+
     var totalFrames = 16; // total number of frames in sprite
     var frameWidth = 330; // width of one frame in px
 
@@ -27,5 +29,9 @@
 
     var newX = -frameWidth * currentFrame;
 
+$('.box').css('height', catheight );
+
     $('.cat').css('background-position', `${newX}px 0`);
+
+
   });
