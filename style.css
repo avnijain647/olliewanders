@@ -29,7 +29,7 @@ html, body{
 } */
 .box{
   position: relative;
-  height:2990px;
+  height:2460px;
 }
 .cat-box{
       z-index:100;
@@ -76,7 +76,7 @@ opacity: 1;
 
 .intro{
   padding-top: 180px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   font-size: 17px;
 }
 .intro a{
@@ -86,20 +86,20 @@ opacity: 1;
     border-bottom: 1px solid #ff0000;
 }
 .logo img{
-  width:90vw;
+  width:95vw;
 }
 .para{
-  width:70vw;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 22px;
+  width:80vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
 }
 
 .header-image{
   top: 0;
   left:0;
   position: relative;
-  width:80vw;
+  width:95vw;
   height: 70vh;
   /* background-color: blue; */
 }
@@ -111,8 +111,8 @@ opacity: 1;
 background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/red-arrow1.png);
-    width:200px;
-      height:200px;
+    width:160px;
+      height:160px;
   top: 0;
   left:10%;
 }
@@ -123,10 +123,10 @@ background-image: url(images/red-arrow1.png);
 background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/sanchita-illustration.png);
-width:200px;
+width:160px;
   height:350px;
       /* background-color: yellow; */
-  top: 100px;
+  top: 70px;
   right:0;
 }
 
@@ -136,18 +136,20 @@ width:200px;
 background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/red-arrow2.png);
-width:150px;
-  height:150px;
+width:120px;
+  height:120px;
   bottom: 0;
   left:30%;
 }
 
 .book-spread{
+  margin-top: 40px;
   top: 0;
   left:0;
   position: relative;
   width:80vw;
-  height: 45vh;
+  height: 40vh;
+  /* background-color: blue; */
 }
 .spread{
   position: absolute;
@@ -181,13 +183,14 @@ justify-content: center;
     /* height:auto; */
 }
 .graphic-text{
+  font-size: 14px;
     width:100px;
   color: white;
 }
 
 .footer{
-  margin-top:100px;
-    margin-bottom:50px;
+  margin-top:80px;
+    margin-bottom:40px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -201,25 +204,24 @@ width:80vw;
   color: white;
 }
 .footer-header{
-    width:40vw;
+    width:60vw;
   padding-top: 40px;
     /* padding-bottom: 20px; */
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .footer-copy{
-  width:60vw;
-  padding-top: 30px;
-    padding-bottom: 30px;
-  font-size: 21px;
+  width:65vw;
+  padding-top: 20px;
+    padding-bottom: 20px;
+  font-size: 17px;
 }
 
 .footer-footnote{
-
-    width:40vw;
-  padding-top: 30px;
-    padding-bottom: 40px;
-  font-size: 17px;
+    width:60vw;
+  padding-top: 20px;
+    padding-bottom: 20px;
+  font-size: 14px;
 }
 .footer-button{
   background-position: center;
@@ -227,11 +229,11 @@ background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/arrow-button.png);
 color: #ff0000;
-  margin-top: 80px;
-    margin-bottom: 30px;
+  margin-top: 20px;
+    margin-bottom: 40px;
   background-color: white;
-  width:250px;
-  height:60px;
+  width:200px;
+  height:50px;
   border-radius: 50px;
 }
 
@@ -243,8 +245,8 @@ color: #ff0000;
   /* align-items:  ; */
   justify-content: space-between;
   text-align: center;
-  padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 30px;
+    padding-bottom: 40px;
 }
 .socials img{
   width:20px;
@@ -252,7 +254,7 @@ color: #ff0000;
 }
 .credits{
   padding-bottom: 20px;
-  width: 60vw;
+  width: 70vw;
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
@@ -273,4 +275,19 @@ color: #ff0000;
   text-decoration: none;
   margin-bottom: 10px;
   border-bottom: 1px solid #ff0000;
+}
+
+@media (min-width: 1024px) {
+
+
+  .intro{
+    font-size:27px;
+  }
+.para{
+  width:50vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 36px;
+}
+
 }
