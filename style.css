@@ -88,18 +88,18 @@ opacity: 1;
   width:95vw;
 }
 .para{
-  width:80vw;
+  width:70vw;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .header-image{
-  top: 0;
+  /* top: 0;
   left:0;
   position: relative;
   width:95vw;
-  height: 70vh;
+  height: 70vh; */
   /* background-color: blue; */
 }
 
@@ -117,16 +117,16 @@ background-image: url(images/red-arrow1.png);
 }
 
 .sanchita-image{
-    position: absolute;
+    /* position: absolute; */
   background-position: center;
 background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/sanchita-illustration.png);
-width:160px;
-  height:350px;
+width:300px;
+  height:400px;
       /* background-color: yellow; */
-  top: 70px;
-  right:0;
+  /* top: 70px;
+  right:0; */
 }
 
 .arrow2{
@@ -143,11 +143,13 @@ width:120px;
 
 .book-spread{
   margin-top: 40px;
-  top: 0;
-  left:0;
-  position: relative;
-  width:80vw;
-  height: 40vh;
+  margin-bottom: 40px;
+  background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+background-image: url(images/spread-mobile.png);
+  width:300px;
+  height: 420px;
   /* background-color: blue; */
 }
 .spread{
@@ -188,7 +190,7 @@ justify-content: center;
 }
 
 .footer{
-  margin-top:80px;
+  margin-top:40px;
     margin-bottom:40px;
   display: flex;
   flex-wrap: wrap;
@@ -276,7 +278,9 @@ color: #ff0000;
   margin-bottom: 10px;
   border-bottom: 1px solid #ff0000;
 }
-
+.tuna{
+  display: none;
+}
 @media (min-width: 1024px) {
 
 
