@@ -29,7 +29,7 @@ html, body{
 } */
 .box{
   position: relative;
-  height:2600px;
+  height:2950px;
 }
 .cat-box{
       z-index:100;
@@ -208,7 +208,7 @@ width:80vw;
 }
 
 .footer-copy{
-  width:60vw;
+  width:55vw;
   padding-top: 30px;
     padding-bottom: 30px;
   font-size: 21px;
@@ -227,8 +227,8 @@ background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/arrow-button.png);
 color: #ff0000;
-  margin-top: 40px;
-    margin-bottom: 40px;
+  margin-top: 90px;
+    margin-bottom: 30px;
   background-color: white;
   width:250px;
   height:60px;
