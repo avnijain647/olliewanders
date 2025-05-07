@@ -10,11 +10,13 @@ font-style: italic;
 
 html, body{
  /* overflow-x: hidden; */
+ background-color: #FDFBF7;
   padding: 0;
   margin: 0;
   font-family: "p22-mackinac-pro", serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.5;
 }
 
 /* @keyframes falling {
@@ -27,7 +29,7 @@ html, body{
 } */
 .box{
   position: relative;
-  height:1800px;
+  height:2600px;
 }
 .cat-box{
       z-index:100;
@@ -49,7 +51,7 @@ html, body{
 .cat{
   width:330px;
   height: 700px;
-opacity: .7;
+opacity: 1;
   background-size: auto 700px;
   background-image: url(images/cat-falling-strip.png);
 }
@@ -73,7 +75,7 @@ opacity: .7;
 }
 
 .intro{
-  padding-top: 50px;
+  padding-top: 180px;
     padding-bottom: 50px;
   font-size: 17px;
 }
@@ -87,10 +89,10 @@ opacity: .7;
   width:90vw;
 }
 .para{
-  width:80vw;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 21px;
+  width:70vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 22px;
 }
 
 .header-image{
@@ -109,10 +111,10 @@ opacity: .7;
 background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/red-arrow1.png);
-    width:250px;
-      height:250px;
+    width:200px;
+      height:200px;
   top: 0;
-  left:0;
+  left:10%;
 }
 
 .sanchita-image{
@@ -121,9 +123,9 @@ background-image: url(images/red-arrow1.png);
 background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/sanchita-illustration.png);
-width:150px;
+width:200px;
   height:350px;
-      /* background-color: red; */
+      /* background-color: yellow; */
   top: 100px;
   right:0;
 }
@@ -134,10 +136,10 @@ width:150px;
 background-size: contain;
 background-repeat: no-repeat;
 background-image: url(images/red-arrow2.png);
-width:200px;
-  height:200px;
+width:150px;
+  height:150px;
   bottom: 0;
-  left:0;
+  left:30%;
 }
 
 .book-spread{
@@ -157,19 +159,35 @@ left:0;
     height:auto;
 }
 
-.graphic{
+.graphic-box{
   position: absolute;
   z-index: 1;
 bottom: 0;
-left:0;
+right:0;
+  width:30vw;
+  height: 30vw;
+  background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+background-image: url(images/red-graphic.png);
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.graphic img{
-  width:20vw;
-    height:auto;
+.graphic{
+
+/* width:100%; */
+    /* height:auto; */
+}
+.graphic-text{
+    width:100px;
+  color: white;
 }
 
 .footer{
+  margin-top:100px;
+    margin-bottom:50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -177,36 +195,43 @@ left:0;
   justify-content: center;
   text-align: center;
 width:80vw;
-  padding: 20px;
+  /* padding: 80px; */
   background-color: #ff0000;
   border-radius: 50px;
   color: white;
 }
 .footer-header{
-  padding-top: 20px;
-    padding-bottom: 20px;
+    width:40vw;
+  padding-top: 40px;
+    /* padding-bottom: 20px; */
   font-size: 32px;
 }
 
 .footer-copy{
   width:60vw;
-  padding-top: 40px;
-    padding-bottom: 40px;
-  font-size: 17px;
+  padding-top: 30px;
+    padding-bottom: 30px;
+  font-size: 21px;
 }
 
 .footer-footnote{
-  padding-top: 20px;
-    padding-bottom: 20px;
-  font-size: 14px;
+
+    width:40vw;
+  padding-top: 30px;
+    padding-bottom: 40px;
+  font-size: 17px;
 }
 .footer-button{
+  background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+background-image: url(images/arrow-button.png);
 color: #ff0000;
-  padding-top: 20px;
-    padding-bottom: 20px;
+  margin-top: 40px;
+    margin-bottom: 40px;
   background-color: white;
-  width:200px;
-  height:15px;
+  width:250px;
+  height:60px;
   border-radius: 50px;
 }
 
@@ -218,8 +243,8 @@ color: #ff0000;
   /* align-items:  ; */
   justify-content: space-between;
   text-align: center;
-  padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 50px;
+    padding-bottom: 50px;
 }
 .socials img{
   width:20px;
@@ -227,9 +252,25 @@ color: #ff0000;
 }
 .credits{
   padding-bottom: 20px;
-  width: 80vw;
+  width: 60vw;
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.credits a{
+  /* font-style: italic; */
+  /* font-size: 21px; */
+  color: #ff0000;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ff0000;
+}
+.email a{
+  font-style: italic;
+  font-size: 21px;
+  color: #ff0000;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ff0000;
 }
