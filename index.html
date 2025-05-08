@@ -127,6 +127,17 @@ whole by the love of a pet.
 </div>
 </div>
 
+
+<script>
+    const minScrollY = 0;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY < minScrollY) {
+        window.scrollTo(0, minScrollY);
+      }
+    });
+  </script>
+
 </body>
 
 <script src="jquery.js"></script>
