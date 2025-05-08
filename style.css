@@ -259,6 +259,7 @@ color: #ff0000;
   height:20px;
 }
 .credits{
+  margin-top:50px;
   padding-bottom: 20px;
   width: 70vw;
   font-size: 12px;
@@ -275,20 +276,32 @@ color: #ff0000;
   border-bottom: 1px solid #ff0000;
 }
 .email a{
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 21px;
   color: #ff0000;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   border-bottom: 1px solid #ff0000;
 }
 .tuna{
   display: none;
 }
+
+@media (min-width: 640px) {
+  .intro{
+    font-size:19px;
+  }
+
+  .para{
+      font-size: 25px;
+  }
+}
+
+
 @media (min-width: 1024px) {
 
   .logo img{
-    width:80vw;
+    width:70vw;
   }
 
   .intro{
@@ -299,7 +312,7 @@ color: #ff0000;
   width:45vw;
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .book-spread-mobile{
@@ -309,9 +322,9 @@ color: #ff0000;
 .header-image{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:  center;
   /* background-color: pink; */
-  width: 90vw;
+  width: 70vw;
   margin-bottom: 50px;
 }
 .tuna{
@@ -321,17 +334,19 @@ color: #ff0000;
   display:  block;
 }
 
-
+.book-spread{
+  width:70vw;
+}
 
 .tuna{
 /* background-color: yellow; */
-width:350px;
+width:300px;
   height:500px;
 }
 .sanchita-image{
 /* background-color: yellow; */
-width:550px;
-  height:800px;
+width:500px;
+  height:750px;
 }
 
 .footer{
